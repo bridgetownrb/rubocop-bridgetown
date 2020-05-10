@@ -21,4 +21,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "rubocop", ">= 0.68.0", "< 0.81.0"
   s.add_runtime_dependency "rubocop-performance", "~> 1.2"
+
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "rake", "~> 12.0"
 end
