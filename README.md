@@ -2,8 +2,8 @@
 
 A RuboCop extension to enforce common code style in Bridgetown plugins.
 
-[![Gem Version](https://img.shields.io/gem/v/rubocop-bridgetown.svg?label=Latest%20Release)][rubygems]
-[![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-0.68.0%20--%200.80.x-green.svg)][rubocop-releases]
+![Gem Version](https://img.shields.io/gem/v/rubocop-bridgetown.svg?label=Latest%20Release)
+![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-0.81.0-green.svg)
 
 
 ## Installation
