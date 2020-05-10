@@ -32,7 +32,7 @@ and run `bundle install`
 ## Usage
 
 You need to tell RuboCop to load the extension and *inherit* the custom RuboCop configuration advocated by
-[Bridgetown](https://github.com/bridgetown).
+[Bridgetown](https://github.com/bridgetownrb/bridgetown).
 
 Place the following at the top of your `.rubocop.yml`.
 
