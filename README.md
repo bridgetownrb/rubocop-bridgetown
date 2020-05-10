@@ -19,12 +19,12 @@ or if you prefer Bundler, add it to your `Gemfile` or `gemspec`
 ```ruby
 # Gemfile
 
-gem "rubocop-bridgetown", "~> 0.1.0"
+gem "rubocop-bridgetown", "~> 0.2.0"
 ```
 ```ruby
 # <plugin>.gemspec
 
-spec.add_development_dependency "rubocop-bridgetown", "~> 0.1.0"
+spec.add_development_dependency "rubocop-bridgetown", "~> 0.2.0"
 ```
 and run `bundle install`
 
