@@ -34,7 +34,7 @@ Lint/StructNewOverride:
 Lint/UnreachableCode:
   Severity: error
 Metrics/AbcSize:
-  Max: 21
+  Max: 24
 Metrics/ClassLength:
   Max: 240
 Layout/LineLength:
