@@ -44,11 +44,25 @@ inherit_gem:
 
 Running `bundle exec rubocop` will now automatically load the `rubocop-bridgetown` cops together with the standard cops.
 
+## Exclude Folders List
+
+Currently it seems Rubocop doesn't inherit the `Excludes` folder list from the gem configuration, so you may want to add it manually to your `.rubocop.yml` file:
+
+```yaml
+AllCops:
+  Exclude:
+    - bin/**/*
+    - exe/**/*
+    - benchmark/**/*
+    - node_modules/**/*
+    - script/**/*
+    - vendor/**/*
+    - tmp/**/*
+```
 
 ## Customization
 
 You can override any settings inherited from the extension by subsequently redefining the concerned parameters.
-
 
 ## Release Cycle
 
