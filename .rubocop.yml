@@ -90,6 +90,8 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: true
+Style/Lambda:
+  EnforcedStyle: literal
 Style/ModuleFunction:
   Enabled: false
 Style/MultilineTernaryOperator:
