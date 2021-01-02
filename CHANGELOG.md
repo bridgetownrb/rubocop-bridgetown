@@ -1,5 +1,14 @@
 # master
 
+## 0.2.3 / 2021-01-01
+
+* Disable enforcement of specific percent literal styles (their flexibility is their strong suit!)
+* Switch lambdas to literal style exclusively (`->` is always preferred over `lamda` keyword)
+
+## 0.2.2 / 2020-12-11
+
+* Fix issue with missing Rubocop require
+
 ## 0.2.1 / 2020-12-11
 
 * Relax Metrics/AbcSize setting
