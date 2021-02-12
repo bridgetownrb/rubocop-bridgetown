@@ -1,5 +1,9 @@
 # master
 
+## 0.2.4 / 2021-02-11
+
+* Allow lambda calls in the format `my_lambda.(x, y)`
+
 ## 0.2.3 / 2021-01-01
 
 * Disable enforcement of specific percent literal styles (their flexibility is their strong suit!)

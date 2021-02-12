@@ -4,7 +4,7 @@ $LOAD_PATH.unshift File.expand_path("lib", __dir__)
 
 Gem::Specification.new do |s|
   s.name        = "rubocop-bridgetown"
-  s.version     = "0.2.3"
+  s.version     = "0.2.4"
   s.authors     = ["Bridgetown Team"]
   s.email       = ["maintainers@bridgetownrb.com"]
   s.homepage    = "https://github.com/bridgetownrb/rubocop-bridgetown"
