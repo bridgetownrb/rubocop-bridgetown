@@ -7,7 +7,7 @@
 ## 0.2.3 / 2021-01-01
 
 * Disable enforcement of specific percent literal styles (their flexibility is their strong suit!)
-* Switch lambdas to literal style exclusively (`->` is always preferred over `lamda` keyword)
+* Switch lambdas to literal style exclusively (`->` is always preferred over `lambda` keyword)
 
 ## 0.2.2 / 2020-12-11
 
