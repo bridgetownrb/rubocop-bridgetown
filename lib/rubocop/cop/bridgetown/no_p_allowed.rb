@@ -9,7 +9,7 @@ module RuboCop
         def_node_search :p_called?, "(send _ :p _)"
 
         def on_send(node)
-          add_offense(node, :location => :selector) if p_called?(node)
+          add_offense(node, location: :selector) if p_called?(node)
         end
       end
     end

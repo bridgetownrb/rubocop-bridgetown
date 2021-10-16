@@ -1,33 +1,26 @@
 # RuboCop Bridgetown
 
-A RuboCop extension to enforce common code style in Bridgetown plugins.
+A RuboCop extension to enforce a common code style in the Bridgetown ecosystem and beyond.
 
 ![Gem Version](https://img.shields.io/gem/v/rubocop-bridgetown.svg?label=Latest%20Release)
-![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-0.81.0-green.svg)
+![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-1.22.0-green.svg)
 
 
 ## Installation
 
-Just install the `rubocop-bridgetown` gem
-
-```
-gem install rubocop-bridgetown
-```
-
-or if you prefer Bundler, add it to your `Gemfile` or `gemspec`
+Just add the `rubocop-bridgetown` gem to your Gemfile.
 
 ```ruby
 # Gemfile
 
-gem "rubocop-bridgetown", "~> 0.2"
+gem "rubocop-bridgetown", "~> 0.3"
 ```
 ```ruby
 # <plugin>.gemspec
 
-spec.add_development_dependency "rubocop-bridgetown", "~> 0.2"
+spec.add_development_dependency "rubocop-bridgetown", "~> 0.3"
 ```
 and run `bundle install`
-
 
 ## Usage
 
@@ -43,6 +36,16 @@ inherit_gem:
 ```
 
 Running `bundle exec rubocop` will now automatically load the `rubocop-bridgetown` cops together with the standard cops.
+
+You can also add a `rubocop` task to your `Rakefile`.
+
+```ruby
+# Rakefile
+
+require "rubocop/rake_task"
+
+RuboCop::RakeTask.new
+```
 
 ## Exclude Folders List
 

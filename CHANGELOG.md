@@ -1,4 +1,9 @@
-# master
+# Changelog
+
+## 0.3.0 / 2021-10-15
+
+* Upgrade to Ruby 3-compatible Rubocop 1.22
+* Disable Style/ParallelAssignment and Style/MultilineBlockChain
 
 ## 0.2.4 / 2021-02-11
 
