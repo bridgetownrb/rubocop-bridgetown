@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 / 2021-12-13
+
+* Disable Style/ClassAndModuleChildren
+
 ## 0.3.0 / 2021-10-15
 
 * Upgrade to Ruby 3-compatible Rubocop 1.22
