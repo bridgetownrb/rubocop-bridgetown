@@ -67,6 +67,8 @@ Style/Documentation:
   Enabled: false
 Style/DoubleNegation:
   Enabled: false
+Style/EndlessMethod:
+  EnforcedStyle: allow_always
 Style/Lambda:
   EnforcedStyle: literal
 Style/LambdaCall:

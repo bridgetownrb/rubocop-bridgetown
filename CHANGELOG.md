@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2 / 2021-12-25
+
+* Allow multi-line endless method definitions
+
 ## 0.3.1 / 2021-12-13
 
 * Disable Style/ClassAndModuleChildren
