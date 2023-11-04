@@ -3,7 +3,7 @@
 A RuboCop extension to enforce a common code style in the Bridgetown ecosystem and beyond.
 
 ![Gem Version](https://img.shields.io/gem/v/rubocop-bridgetown.svg?label=Latest%20Release)
-![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-1.22.0-green.svg)
+![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-1.23.0-green.svg)
 
 
 ## Installation
