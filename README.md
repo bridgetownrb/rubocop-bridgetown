@@ -1,10 +1,9 @@
-# RuboCop Bridgetown
+# RuboCop: Bridgetown
 
-A RuboCop extension to enforce a common code style in the Bridgetown ecosystem and beyond.
+A [RuboCop](https://rubocop.org/) extension to enforce a common code style in the Bridgetown ecosystem and beyond.
 
 ![Gem Version](https://img.shields.io/gem/v/rubocop-bridgetown.svg?label=Latest%20Release)
 ![RuboCop Support](https://img.shields.io/badge/Rubocop%20Support-1.23.0-green.svg)
-
 
 ## Installation
 
@@ -13,13 +12,17 @@ Just add the `rubocop-bridgetown` gem to your Gemfile.
 ```ruby
 # Gemfile
 
-gem "rubocop-bridgetown", "~> 0.3"
+gem "rubocop-bridgetown", "~> 0.4"
 ```
+
+or if you're developing another gem:
+
 ```ruby
 # <plugin>.gemspec
 
-spec.add_development_dependency "rubocop-bridgetown", "~> 0.3"
+spec.add_development_dependency "rubocop-bridgetown", "~> 0.4"
 ```
+
 and run `bundle install`
 
 ## Usage
@@ -65,4 +68,12 @@ AllCops:
 
 ## Customization
 
-You can override any settings inherited from the extension by subsequently redefining the concerned parameters.
+You can override any settings inherited from the extension by configuring cops in your `.rubocop.yml`.
+
+Besides cops which are provided directly by RuboCop and `rubocop-performance`, there are a few additional cops provided by this plugin:
+
+* `Bridgetown/HTMLEscapedHeredoc`: this will monitor any heredocs in your code for potential XSS issues inside of any string interpolations. To avoid linting errors, you will need to wrap any interpolated code inside of one of the following method names: `html`, `html_map`, `html_attributes`, `text`, or `render`. These methods are provided by the [Streamlined](https://github.com/bridgetownrb/streamlined) gem, bundled in Bridgetown 1.4 by default (but you can use them in any Ruby application including Rails).
+* `Bridgetown/NoPAllowed`: this encourages using your framework's logger rather than `p` to output debugging information.
+* `Bridgetown/NoPutsAllowed`: this encourages using your framework's logger rather than `puts` to output debugging information.
+
+You can disable any of these cops in specific parts of your codebase as needed, or by setting `Enabled: false` for any particular cop in your `.rubocop.yml`.

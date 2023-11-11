@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.1 / 2023-11-10
+
+* Add support for `html_attributes` and `(` characters in the heredoc cop.
+
+## 0.4.0 / 2023-11-03
+
+* Add insecure heredoc cop in anticipation of Bridgetown 1.4
+
 ## 0.3.2 / 2021-12-25
 
 * Allow multi-line endless method definitions
