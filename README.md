@@ -40,6 +40,8 @@ inherit_gem:
 
 Running `bundle exec rubocop` will now automatically load the `rubocop-bridgetown` cops together with the standard cops.
 
+**Note:** if you want just the extra cops from this gem such as `Bridgetown/HTMLEscapedHeredoc` but wish to use your own configuration otherwise, you can omit the `inherit_gem` section entirely.
+
 You can also add a `rubocop` task to your `Rakefile`.
 
 ```ruby
@@ -72,8 +74,10 @@ You can override any settings inherited from the extension by configuring cops i
 
 Besides cops which are provided directly by RuboCop and `rubocop-performance`, there are a few additional cops provided by this plugin:
 
-* `Bridgetown/HTMLEscapedHeredoc`: this will monitor any heredocs in your code for potential XSS issues inside of any string interpolations. To avoid linting errors, you will need to wrap any interpolated code inside of one of the following method names: `html`, `html_map`, `html_attributes`, `text`, or `render`. These methods are provided by the [Streamlined](https://github.com/bridgetownrb/streamlined) gem, bundled in Bridgetown 1.4 by default (but you can use them in any Ruby application including Rails).
+* `Bridgetown/HTMLEscapedHeredoc`: this will monitor any heredocs in your code starting with `HTML` or `MARKDOWN` for potential XSS issues inside of any string interpolations. To avoid linting errors, you will need to wrap any interpolated code in the string with one of the following method names: `html`, `html_map`, `html_attributes`, `text`, or `render`. These methods are provided by the [Streamlined](https://github.com/bridgetownrb/streamlined) gem, bundled in Bridgetown 1.4 by default (but you can use them in any Ruby application including Rails).
 * `Bridgetown/NoPAllowed`: this encourages using your framework's logger rather than `p` to output debugging information.
 * `Bridgetown/NoPutsAllowed`: this encourages using your framework's logger rather than `puts` to output debugging information.
 
 You can disable any of these cops in specific parts of your codebase as needed, or by setting `Enabled: false` for any particular cop in your `.rubocop.yml`.
+
+Regarding recommended Streamlined syntax, you may want to exclude `Layout/SpaceBeforeFirstArg` and `Layout/SpaceBeforeBlockBraces` in the folders you write Streamlined components and helpers. This is so you can write `text->{ ... }`, `html->{ ... }`, etc. (Otherwise RuboCop will require you to write `text -> { ... }`, etc. which is more verbose.)
