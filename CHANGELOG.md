@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 / 2024-04-11
+
+* Require minimum Ruby v3.1
+* Rename insecure heredoc cop to `Bridgetown/InsecureHeredoc`
+* Disable Layout/LeadingCommentSpace
+* Disable Style/MultilineTernaryOperator
+
 ## 0.4.1 / 2023-11-10
 
 * Add support for `html_attributes` and `(` characters in the heredoc cop.

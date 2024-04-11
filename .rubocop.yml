@@ -2,7 +2,7 @@ require:
   - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.1
   NewCops: enable
   SuggestExtensions: false
   Exclude:
@@ -26,6 +26,8 @@ Layout/HashAlignment:
   EnforcedHashRocketStyle: table
 Layout/IndentationWidth:
   Severity: error
+Layout/LeadingCommentSpace:
+  Enabled: false
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Layout/MultilineOperationIndentation:
@@ -78,7 +80,7 @@ Style/ModuleFunction:
 Style/MultilineBlockChain:
   Enabled: false
 Style/MultilineTernaryOperator:
-  Severity: error
+  Enabled: false
 Style/ParallelAssignment:
   Enabled: false
 Style/PercentLiteralDelimiters:
