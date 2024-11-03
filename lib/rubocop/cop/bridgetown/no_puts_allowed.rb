@@ -9,7 +9,7 @@ module RuboCop
         def_node_search :puts_called?, "(send nil? :puts _)"
 
         def on_send(node)
-          add_offense(node, location: :selector) if puts_called?(node)
+          add_offense(node) if puts_called?(node)
         end
       end
     end

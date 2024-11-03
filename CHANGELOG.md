@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1 / 2024-11-02
+
+* Fix outdated syntax after update to `Base`
+
 ## 0.6.0 / 2024-11-02
 
 * Fix deprecation warnings, use `RuboCop::Cop::Base`
