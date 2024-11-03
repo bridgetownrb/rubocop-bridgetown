@@ -3,7 +3,7 @@
 module RuboCop
   module Cop
     module Bridgetown
-      class NoPutsAllowed < Cop
+      class NoPutsAllowed < Base
         MSG = "Avoid using `puts` to print things. Use `Bridgetown.logger` instead."
 
         def_node_search :puts_called?, "(send nil? :puts _)"

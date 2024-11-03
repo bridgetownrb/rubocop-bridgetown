@@ -3,7 +3,7 @@
 module RuboCop
   module Cop
     module Bridgetown
-      class InsecureHeredoc < Cop
+      class InsecureHeredoc < Base
         include Heredoc
 
         MSG = "Insecure heredoc detected. Use `html`, `html_map`, `html_attributes`, `text`, " \

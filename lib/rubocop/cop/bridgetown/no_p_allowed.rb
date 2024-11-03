@@ -3,7 +3,7 @@
 module RuboCop
   module Cop
     module Bridgetown
-      class NoPAllowed < Cop
+      class NoPAllowed < Base
         MSG = "Avoid using `p` to print things. Use `Bridgetown.logger` instead."
 
         def_node_search :p_called?, "(send _ :p _)"
